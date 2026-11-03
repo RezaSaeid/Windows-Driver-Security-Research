@@ -14,7 +14,7 @@ A structured portfolio for Windows kernel-driver security, driver architecture, 
 - Driver Verifier and crash-dump analysis
 - Secure design and attack-surface reduction
 
-## Structure
+## Repository layout
 ```text
 fundamentals/
 code-review/

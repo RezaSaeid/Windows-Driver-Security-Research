@@ -1,0 +1,22 @@
+# Driver build output and kernel debugging artifacts
+*.sys
+*.dll
+*.exe
+*.obj
+*.o
+*.lib
+*.exp
+*.pdb
+*.ilk
+*.map
+*.inf.bak
+*.dmp
+*.hdmp
+*.etl
+*.evtx
+.vs/
+x64/
+x86/
+Debug/
+Release/
+private-evidence/

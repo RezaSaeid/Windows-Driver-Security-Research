@@ -16,6 +16,7 @@ A technical research workspace for Windows kernel-driver architecture, secure co
 WDM and KMDF, device objects, symbolic links, IRPs, dispatch routines and queue callbacks, IOCTL handling, device ACLs, buffer validation, pool allocation, object lifetime, IRQL constraints, cancellation, synchronization, Driver Verifier, and crash analysis.
 
 ## Start here
+- [Technical analysis framework](docs/technical-analysis-framework.md)
 
 - [Driver research roadmap](docs/driver-research-roadmap.md)
 - [Driver review checklist](docs/review-checklist.md)

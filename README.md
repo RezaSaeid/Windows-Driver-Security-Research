@@ -14,18 +14,13 @@ A structured portfolio for Windows kernel-driver security, driver architecture, 
 - Driver Verifier and crash-dump analysis
 - Secure design and attack-surface reduction
 
-## Repository layout
-```text
-fundamentals/
-code-review/
-labs/
-crash-analysis/
-secure-design/
-reports/
-```
-
 ## Suggested lab setup
 Use a dedicated Windows VM with snapshots and a separate test VM for kernel debugging where possible. Begin with Microsoft sample drivers and intentionally vulnerable training drivers. Enable Driver Verifier only in disposable test environments and keep recovery access available.
+
+## Start here
+- [Driver research roadmap](docs/driver-research-roadmap.md)
+- [Driver review checklist](docs/review-checklist.md)
+- [Driver review template](templates/driver-review-template.md)
 
 ## Research workflow
 1. Identify the driver and supported OS/build.

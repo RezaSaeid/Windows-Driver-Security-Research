@@ -1,33 +1,24 @@
 # Windows Driver Security Research
 
-A structured portfolio for Windows kernel-driver security, driver architecture, reverse engineering, and defensive code review.
+A structured portfolio for Windows kernel-driver architecture, secure code review, debugging, and vulnerability research foundations.
 
-> **Status:** Research and learning workspace. Completed experiments and findings are distinguished from planned exercises.
+> **Status:** Research and learning workspace. Planned exercises are not represented as completed findings.
 
-## Focus areas
-- Windows driver architecture and lifecycle
-- WDM and KMDF fundamentals
-- Device objects, symbolic links, IRPs, and dispatch routines
-- IOCTL handling and buffer validation
-- Driver installation, signing, and service configuration
-- Pool allocation, object lifetime, and concurrency
-- Driver Verifier and crash-dump analysis
-- Secure design and attack-surface reduction
-
-## Suggested lab setup
-Use a dedicated Windows VM with snapshots and a separate test VM for kernel debugging where possible. Begin with Microsoft sample drivers and intentionally vulnerable training drivers. Enable Driver Verifier only in disposable test environments and keep recovery access available.
+## Focus
+WDM/KMDF, device objects, symbolic links, IRPs, dispatch routines, IOCTL handling, access control, buffer validation, pool allocation, object lifetime, concurrency, Driver Verifier, and crash analysis.
 
 ## Start here
 - [Driver research roadmap](docs/driver-research-roadmap.md)
 - [Driver review checklist](docs/review-checklist.md)
+- [Interface review exercise](labs/driver-interface-review.md)
+- [Kernel debugging safety](docs/debugging-safety.md)
 - [Driver review template](templates/driver-review-template.md)
 
-## Research workflow
-1. Identify the driver and supported OS/build.
-2. Map device interfaces, dispatch paths, and privileged operations.
-3. Review input validation, access checks, memory handling, synchronization, and cleanup.
-4. Validate hypotheses with controlled tests and debugging.
-5. Document root cause, impact, evidence, and mitigations.
+## Lab requirements
+Use a dedicated Windows VM with snapshots and recovery access. Begin with Microsoft sample drivers or intentionally vulnerable training drivers. Record exact source revision, binary hash, OS build, architecture, and tool versions.
 
-## Responsible research
-Analyze and test only software within an authorized scope. Do not publish sensitive third-party code, secrets, private symbols, or unnecessary exploit details.
+## Research workflow
+Map the interface, trace requests to handlers, review validation/access/memory/lifetime/concurrency, validate hypotheses under controlled conditions, and document root cause, impact, evidence, and mitigations.
+
+## Safety
+Driver Verifier and kernel debugging can crash the system. Never run risky driver experiments on a daily-use host. Test only within an authorized scope.

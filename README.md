@@ -47,3 +47,7 @@ Use a dedicated Windows VM with snapshots and recovery access. Begin with Micros
 ## Current maturity and safety
 
 The repository provides review guidance and exercises; do not interpret their presence as evidence that a driver has been dynamically tested. Driver Verifier and kernel debugging can crash the system. Never run risky driver experiments on a daily-use host or against a third-party driver without authorization.
+
+## Architecture & Technical Case Study
+
+See [the architecture and technical case study](docs/case-study-and-architecture.md) for the domain-specific system model, analysis workflow, evidence requirements, and quality gates.

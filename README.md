@@ -51,3 +51,8 @@ The repository provides review guidance and exercises; do not interpret their pr
 ## Architecture & Technical Case Study
 
 See [the architecture and technical case study](docs/case-study-and-architecture.md) for the domain-specific system model, analysis workflow, evidence requirements, and quality gates.
+
+## Deep-Dive Review and Evidence Reporting
+
+- [Annotated technical deep dive](docs/deep-dive-code-review.md)
+- [Evidence-based research report template](templates/research-evidence-report.md)
